@@ -12,4 +12,5 @@
 
 + (NSString *)webAppIndexURL;
 + (NSString *)webAppPersonalCenterURL;
++ (NSString *)appSplashImageURL;
 @end

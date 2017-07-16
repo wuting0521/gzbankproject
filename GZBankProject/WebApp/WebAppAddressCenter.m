@@ -13,6 +13,8 @@ static NSString * kWebAppDevelopDomain = @"http://39.108.155.19:8080";
 static NSString * kWebAppIndexURL = @"/front/index.html";
 static NSString * kWebAppPersonalCenterURL = @"/front/index.html#/person/index";
 
+static NSString * kAppSplashImageURL = @"/end/core/image/start";
+
 @implementation WebAppAddressCenter
 
 + (NSString *)webAppDomain {
@@ -25,6 +27,10 @@ static NSString * kWebAppPersonalCenterURL = @"/front/index.html#/person/index";
 
 + (NSString *)webAppPersonalCenterURL {
     return [NSString stringWithFormat:@"%@%@", [WebAppAddressCenter webAppDomain], kWebAppPersonalCenterURL];
+}
+
++ (NSString *)appSplashImageURL {
+    return [NSString stringWithFormat:@"%@%@", [WebAppAddressCenter webAppDomain], kAppSplashImageURL];
 }
 
 @end

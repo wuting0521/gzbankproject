@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "WebAppAddressCenter.h"
 #import "WebAppViewController.h"
+#import "SplashView.h"
 
 @interface MainViewController ()
 
@@ -21,6 +22,14 @@
     // Do any additional setup after loading the view.
     [self setupTabBar];
     [self setupEntrys];
+    [self loadSplashView];
+}
+
+- (void)loadSplashView {
+    SplashView *splash = [[SplashView alloc] initWithFrame:self.view.bounds];
+    splash.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.view addSubview:splash];
+    [splash loadSplashImageWithHideInterval:5.0];
 }
 
 - (void)setupTabBar {

@@ -17,6 +17,14 @@
 		00E404AE1F1B419000B23E43 /* WebAppAddressCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404AD1F1B419000B23E43 /* WebAppAddressCenter.m */; };
 		00E404B11F1B435A00B23E43 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E404B01F1B435A00B23E43 /* WebKit.framework */; };
 		00E404B41F1B441D00B23E43 /* WebAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404B31F1B441D00B23E43 /* WebAppViewController.m */; };
+		00E404B71F1B493400B23E43 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404B61F1B493400B23E43 /* SplashView.m */; };
+		00E404BB1F1B4A1700B23E43 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404BA1F1B4A1700B23E43 /* HTTPClient.m */; };
+		00E404CA1F1B530800B23E43 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404BF1F1B530800B23E43 /* NSArray+Safe.m */; };
+		00E404CB1F1B530800B23E43 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404C11F1B530800B23E43 /* NSDictionary+Safe.m */; };
+		00E404CC1F1B530800B23E43 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404C31F1B530800B23E43 /* NSMutableArray+Safe.m */; };
+		00E404CD1F1B530800B23E43 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404C51F1B530800B23E43 /* NSMutableDictionary+Safe.m */; };
+		00E404CE1F1B530800B23E43 /* NSString+SafeSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404C71F1B530800B23E43 /* NSString+SafeSubstring.m */; };
+		00E404CF1F1B530800B23E43 /* SafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404C91F1B530800B23E43 /* SafeMutableDictionary.m */; };
 		2E247A8A07AABF3CCF392719 /* libPods-GZBankProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6633CC8CE74BD618C228FC /* libPods-GZBankProject.a */; };
 		EBB6979D7C8434D457C7DCB0 /* libPods-GZBankProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDE4D8D896D54E8F8E0D2F2 /* libPods-GZBankProjectTests.a */; };
 		F8D15069E2A5271659011EC8 /* libPods-GZBankProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D224C8882FCC8D80663B37 /* libPods-GZBankProjectUITests.a */; };
@@ -60,6 +68,22 @@
 		00E404B01F1B435A00B23E43 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		00E404B21F1B441D00B23E43 /* WebAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppViewController.h; sourceTree = "<group>"; };
 		00E404B31F1B441D00B23E43 /* WebAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppViewController.m; sourceTree = "<group>"; };
+		00E404B51F1B493400B23E43 /* SplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
+		00E404B61F1B493400B23E43 /* SplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
+		00E404B91F1B4A1700B23E43 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		00E404BA1F1B4A1700B23E43 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		00E404BE1F1B530800B23E43 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		00E404BF1F1B530800B23E43 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		00E404C01F1B530800B23E43 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		00E404C11F1B530800B23E43 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		00E404C21F1B530800B23E43 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		00E404C31F1B530800B23E43 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
+		00E404C41F1B530800B23E43 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		00E404C51F1B530800B23E43 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		00E404C61F1B530800B23E43 /* NSString+SafeSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SafeSubstring.h"; sourceTree = "<group>"; };
+		00E404C71F1B530800B23E43 /* NSString+SafeSubstring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SafeSubstring.m"; sourceTree = "<group>"; };
+		00E404C81F1B530800B23E43 /* SafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeMutableDictionary.h; sourceTree = "<group>"; };
+		00E404C91F1B530800B23E43 /* SafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeMutableDictionary.m; sourceTree = "<group>"; };
 		0DE44D32D8A754DE8AA9034A /* Pods-GZBankProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProjectUITests/Pods-GZBankProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A1FAEDCEB0CD773335E95BC /* Pods-GZBankProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProject/Pods-GZBankProject.debug.xcconfig"; sourceTree = "<group>"; };
 		333BC029982B2E07E1811058 /* Pods-GZBankProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProject/Pods-GZBankProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +149,8 @@
 		00E404731F1B3BC800B23E43 /* GZBankProject */ = {
 			isa = PBXGroup;
 			children = (
+				00E404BD1F1B530800B23E43 /* ObjectSafe */,
+				00E404B81F1B4A0B00B23E43 /* HTTPClient */,
 				00E404AB1F1B417B00B23E43 /* WebApp */,
 				00E404A71F1B3BF400B23E43 /* Main */,
 				00E404771F1B3BC800B23E43 /* AppDelegate.h */,
@@ -168,6 +194,8 @@
 			children = (
 				00E404A81F1B3C2200B23E43 /* MainViewController.h */,
 				00E404A91F1B3C2200B23E43 /* MainViewController.m */,
+				00E404B51F1B493400B23E43 /* SplashView.h */,
+				00E404B61F1B493400B23E43 /* SplashView.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -192,6 +220,34 @@
 				49D224C8882FCC8D80663B37 /* libPods-GZBankProjectUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00E404B81F1B4A0B00B23E43 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				00E404B91F1B4A1700B23E43 /* HTTPClient.h */,
+				00E404BA1F1B4A1700B23E43 /* HTTPClient.m */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		00E404BD1F1B530800B23E43 /* ObjectSafe */ = {
+			isa = PBXGroup;
+			children = (
+				00E404BE1F1B530800B23E43 /* NSArray+Safe.h */,
+				00E404BF1F1B530800B23E43 /* NSArray+Safe.m */,
+				00E404C01F1B530800B23E43 /* NSDictionary+Safe.h */,
+				00E404C11F1B530800B23E43 /* NSDictionary+Safe.m */,
+				00E404C21F1B530800B23E43 /* NSMutableArray+Safe.h */,
+				00E404C31F1B530800B23E43 /* NSMutableArray+Safe.m */,
+				00E404C41F1B530800B23E43 /* NSMutableDictionary+Safe.h */,
+				00E404C51F1B530800B23E43 /* NSMutableDictionary+Safe.m */,
+				00E404C61F1B530800B23E43 /* NSString+SafeSubstring.h */,
+				00E404C71F1B530800B23E43 /* NSString+SafeSubstring.m */,
+				00E404C81F1B530800B23E43 /* SafeMutableDictionary.h */,
+				00E404C91F1B530800B23E43 /* SafeMutableDictionary.m */,
+			);
+			path = ObjectSafe;
 			sourceTree = "<group>";
 		};
 		76108595A5E3C6596340A895 /* Pods */ = {
@@ -486,11 +542,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E404CF1F1B530800B23E43 /* SafeMutableDictionary.m in Sources */,
 				00E404791F1B3BC800B23E43 /* AppDelegate.m in Sources */,
+				00E404B71F1B493400B23E43 /* SplashView.m in Sources */,
 				00E404B41F1B441D00B23E43 /* WebAppViewController.m in Sources */,
+				00E404CA1F1B530800B23E43 /* NSArray+Safe.m in Sources */,
 				00E404AA1F1B3C2200B23E43 /* MainViewController.m in Sources */,
+				00E404CB1F1B530800B23E43 /* NSDictionary+Safe.m in Sources */,
+				00E404CE1F1B530800B23E43 /* NSString+SafeSubstring.m in Sources */,
 				00E404AE1F1B419000B23E43 /* WebAppAddressCenter.m in Sources */,
+				00E404CD1F1B530800B23E43 /* NSMutableDictionary+Safe.m in Sources */,
 				00E404761F1B3BC800B23E43 /* main.m in Sources */,
+				00E404CC1F1B530800B23E43 /* NSMutableArray+Safe.m in Sources */,
+				00E404BB1F1B4A1700B23E43 /* HTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +786,7 @@
 				00E404A01F1B3BC800B23E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00E404A11F1B3BC800B23E43 /* Build configuration list for PBXNativeTarget "GZBankProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +795,7 @@
 				00E404A31F1B3BC800B23E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00E404A41F1B3BC800B23E43 /* Build configuration list for PBXNativeTarget "GZBankProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +804,7 @@
 				00E404A61F1B3BC800B23E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
