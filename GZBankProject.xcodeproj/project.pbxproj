@@ -17,6 +17,9 @@
 		00E404AE1F1B419000B23E43 /* WebAppAddressCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404AD1F1B419000B23E43 /* WebAppAddressCenter.m */; };
 		00E404B11F1B435A00B23E43 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E404B01F1B435A00B23E43 /* WebKit.framework */; };
 		00E404B41F1B441D00B23E43 /* WebAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404B31F1B441D00B23E43 /* WebAppViewController.m */; };
+		2E247A8A07AABF3CCF392719 /* libPods-GZBankProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6633CC8CE74BD618C228FC /* libPods-GZBankProject.a */; };
+		EBB6979D7C8434D457C7DCB0 /* libPods-GZBankProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDE4D8D896D54E8F8E0D2F2 /* libPods-GZBankProjectTests.a */; };
+		F8D15069E2A5271659011EC8 /* libPods-GZBankProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D224C8882FCC8D80663B37 /* libPods-GZBankProjectUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,15 @@
 		00E404B01F1B435A00B23E43 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		00E404B21F1B441D00B23E43 /* WebAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppViewController.h; sourceTree = "<group>"; };
 		00E404B31F1B441D00B23E43 /* WebAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppViewController.m; sourceTree = "<group>"; };
+		0DE44D32D8A754DE8AA9034A /* Pods-GZBankProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProjectUITests/Pods-GZBankProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A1FAEDCEB0CD773335E95BC /* Pods-GZBankProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProject/Pods-GZBankProject.debug.xcconfig"; sourceTree = "<group>"; };
+		333BC029982B2E07E1811058 /* Pods-GZBankProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProject/Pods-GZBankProject.release.xcconfig"; sourceTree = "<group>"; };
+		3599E716357F01A0F5785E9D /* Pods-GZBankProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProjectTests/Pods-GZBankProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49D224C8882FCC8D80663B37 /* libPods-GZBankProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GZBankProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA4AA1F65577DC9545545E2 /* Pods-GZBankProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProjectTests/Pods-GZBankProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D6633CC8CE74BD618C228FC /* libPods-GZBankProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GZBankProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDE4D8D896D54E8F8E0D2F2 /* libPods-GZBankProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GZBankProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEE62E984B634E5600B2577 /* Pods-GZBankProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProjectUITests/Pods-GZBankProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E404B11F1B435A00B23E43 /* WebKit.framework in Frameworks */,
+				2E247A8A07AABF3CCF392719 /* libPods-GZBankProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB6979D7C8434D457C7DCB0 /* libPods-GZBankProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D15069E2A5271659011EC8 /* libPods-GZBankProjectUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +108,7 @@
 				00E404981F1B3BC800B23E43 /* GZBankProjectUITests */,
 				00E404721F1B3BC800B23E43 /* Products */,
 				00E404AF1F1B435A00B23E43 /* Frameworks */,
+				76108595A5E3C6596340A895 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,8 +187,24 @@
 			isa = PBXGroup;
 			children = (
 				00E404B01F1B435A00B23E43 /* WebKit.framework */,
+				8D6633CC8CE74BD618C228FC /* libPods-GZBankProject.a */,
+				8FDE4D8D896D54E8F8E0D2F2 /* libPods-GZBankProjectTests.a */,
+				49D224C8882FCC8D80663B37 /* libPods-GZBankProjectUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76108595A5E3C6596340A895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FAEDCEB0CD773335E95BC /* Pods-GZBankProject.debug.xcconfig */,
+				333BC029982B2E07E1811058 /* Pods-GZBankProject.release.xcconfig */,
+				3599E716357F01A0F5785E9D /* Pods-GZBankProjectTests.debug.xcconfig */,
+				6CA4AA1F65577DC9545545E2 /* Pods-GZBankProjectTests.release.xcconfig */,
+				0DE44D32D8A754DE8AA9034A /* Pods-GZBankProjectUITests.debug.xcconfig */,
+				BFEE62E984B634E5600B2577 /* Pods-GZBankProjectUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E4049E1F1B3BC800B23E43 /* Build configuration list for PBXNativeTarget "GZBankProject" */;
 			buildPhases = (
+				CD07AF088FCB0E42088BACE8 /* [CP] Check Pods Manifest.lock */,
 				00E4046D1F1B3BC800B23E43 /* Sources */,
 				00E4046E1F1B3BC800B23E43 /* Frameworks */,
 				00E4046F1F1B3BC800B23E43 /* Resources */,
+				FA0A5565D257D3EF0651091D /* [CP] Embed Pods Frameworks */,
+				36A22A20B586D267C57CF72B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E404A11F1B3BC800B23E43 /* Build configuration list for PBXNativeTarget "GZBankProjectTests" */;
 			buildPhases = (
+				D719DB85BE2C0F4F11905F70 /* [CP] Check Pods Manifest.lock */,
 				00E404861F1B3BC800B23E43 /* Sources */,
 				00E404871F1B3BC800B23E43 /* Frameworks */,
 				00E404881F1B3BC800B23E43 /* Resources */,
+				269882784ED9C28CD16038A7 /* [CP] Embed Pods Frameworks */,
+				3BA922126C49772AAF77E70A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E404A41F1B3BC800B23E43 /* Build configuration list for PBXNativeTarget "GZBankProjectUITests" */;
 			buildPhases = (
+				2791B62C092FAE3BDD0E9DE6 /* [CP] Check Pods Manifest.lock */,
 				00E404911F1B3BC800B23E43 /* Sources */,
 				00E404921F1B3BC800B23E43 /* Frameworks */,
 				00E404931F1B3BC800B23E43 /* Resources */,
+				D311F7C5BBC5E9868A4B6F06 /* [CP] Embed Pods Frameworks */,
+				39210A71C497B01E3D92B84A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,6 +342,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		269882784ED9C28CD16038A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GZBankProjectTests/Pods-GZBankProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2791B62C092FAE3BDD0E9DE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36A22A20B586D267C57CF72B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GZBankProject/Pods-GZBankProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39210A71C497B01E3D92B84A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GZBankProjectUITests/Pods-GZBankProjectUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BA922126C49772AAF77E70A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GZBankProjectTests/Pods-GZBankProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD07AF088FCB0E42088BACE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D311F7C5BBC5E9868A4B6F06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GZBankProjectUITests/Pods-GZBankProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D719DB85BE2C0F4F11905F70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0A5565D257D3EF0651091D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GZBankProject/Pods-GZBankProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00E4046D1F1B3BC800B23E43 /* Sources */ = {
@@ -452,6 +631,7 @@
 		};
 		00E4049F1F1B3BC800B23E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1FAEDCEB0CD773335E95BC /* Pods-GZBankProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GZBankProject/Info.plist;
@@ -463,6 +643,7 @@
 		};
 		00E404A01F1B3BC800B23E43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333BC029982B2E07E1811058 /* Pods-GZBankProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GZBankProject/Info.plist;
@@ -474,6 +655,7 @@
 		};
 		00E404A21F1B3BC800B23E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3599E716357F01A0F5785E9D /* Pods-GZBankProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GZBankProjectTests/Info.plist;
@@ -486,6 +668,7 @@
 		};
 		00E404A31F1B3BC800B23E43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA4AA1F65577DC9545545E2 /* Pods-GZBankProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GZBankProjectTests/Info.plist;
@@ -498,6 +681,7 @@
 		};
 		00E404A51F1B3BC800B23E43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE44D32D8A754DE8AA9034A /* Pods-GZBankProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GZBankProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -509,6 +693,7 @@
 		};
 		00E404A61F1B3BC800B23E43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFEE62E984B634E5600B2577 /* Pods-GZBankProjectUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GZBankProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
