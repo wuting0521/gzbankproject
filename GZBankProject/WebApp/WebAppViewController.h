@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WebAppViewController.h
 //  GZBankProject
 //
 //  Created by Wu Ting on 2017/7/16.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface WebAppViewController : UIViewController
 
-
+- (instancetype)initWithUrlString:(NSString *)urlString;
 @end
-

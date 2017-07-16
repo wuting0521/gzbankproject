@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		00E404761F1B3BC800B23E43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404751F1B3BC800B23E43 /* main.m */; };
 		00E404791F1B3BC800B23E43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404781F1B3BC800B23E43 /* AppDelegate.m */; };
-		00E4047C1F1B3BC800B23E43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4047B1F1B3BC800B23E43 /* ViewController.m */; };
-		00E4047F1F1B3BC800B23E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E4047D1F1B3BC800B23E43 /* Main.storyboard */; };
 		00E404811F1B3BC800B23E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E404801F1B3BC800B23E43 /* Assets.xcassets */; };
 		00E404841F1B3BC800B23E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E404821F1B3BC800B23E43 /* LaunchScreen.storyboard */; };
 		00E4048F1F1B3BC800B23E43 /* GZBankProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E4048E1F1B3BC800B23E43 /* GZBankProjectTests.m */; };
 		00E4049A1F1B3BC800B23E43 /* GZBankProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404991F1B3BC800B23E43 /* GZBankProjectUITests.m */; };
+		00E404AA1F1B3C2200B23E43 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404A91F1B3C2200B23E43 /* MainViewController.m */; };
+		00E404AE1F1B419000B23E43 /* WebAppAddressCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404AD1F1B419000B23E43 /* WebAppAddressCenter.m */; };
+		00E404B11F1B435A00B23E43 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E404B01F1B435A00B23E43 /* WebKit.framework */; };
+		00E404B41F1B441D00B23E43 /* WebAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404B31F1B441D00B23E43 /* WebAppViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,6 @@
 		00E404751F1B3BC800B23E43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00E404771F1B3BC800B23E43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00E404781F1B3BC800B23E43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		00E4047A1F1B3BC800B23E43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		00E4047B1F1B3BC800B23E43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		00E4047E1F1B3BC800B23E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00E404801F1B3BC800B23E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E404831F1B3BC800B23E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00E404851F1B3BC800B23E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,13 @@
 		00E404951F1B3BC800B23E43 /* GZBankProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GZBankProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E404991F1B3BC800B23E43 /* GZBankProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZBankProjectUITests.m; sourceTree = "<group>"; };
 		00E4049B1F1B3BC800B23E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E404A81F1B3C2200B23E43 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		00E404A91F1B3C2200B23E43 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		00E404AC1F1B419000B23E43 /* WebAppAddressCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppAddressCenter.h; sourceTree = "<group>"; };
+		00E404AD1F1B419000B23E43 /* WebAppAddressCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppAddressCenter.m; sourceTree = "<group>"; };
+		00E404B01F1B435A00B23E43 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		00E404B21F1B441D00B23E43 /* WebAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppViewController.h; sourceTree = "<group>"; };
+		00E404B31F1B441D00B23E43 /* WebAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E404B11F1B435A00B23E43 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,7 @@
 				00E4048D1F1B3BC800B23E43 /* GZBankProjectTests */,
 				00E404981F1B3BC800B23E43 /* GZBankProjectUITests */,
 				00E404721F1B3BC800B23E43 /* Products */,
+				00E404AF1F1B435A00B23E43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +109,12 @@
 		00E404731F1B3BC800B23E43 /* GZBankProject */ = {
 			isa = PBXGroup;
 			children = (
+				00E404AB1F1B417B00B23E43 /* WebApp */,
+				00E404A71F1B3BF400B23E43 /* Main */,
 				00E404771F1B3BC800B23E43 /* AppDelegate.h */,
 				00E404781F1B3BC800B23E43 /* AppDelegate.m */,
-				00E4047A1F1B3BC800B23E43 /* ViewController.h */,
-				00E4047B1F1B3BC800B23E43 /* ViewController.m */,
-				00E4047D1F1B3BC800B23E43 /* Main.storyboard */,
 				00E404801F1B3BC800B23E43 /* Assets.xcassets */,
 				00E404821F1B3BC800B23E43 /* LaunchScreen.storyboard */,
-				00E404851F1B3BC800B23E43 /* Info.plist */,
 				00E404741F1B3BC800B23E43 /* Supporting Files */,
 			);
 			path = GZBankProject;
@@ -117,6 +123,7 @@
 		00E404741F1B3BC800B23E43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00E404851F1B3BC800B23E43 /* Info.plist */,
 				00E404751F1B3BC800B23E43 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +145,34 @@
 				00E4049B1F1B3BC800B23E43 /* Info.plist */,
 			);
 			path = GZBankProjectUITests;
+			sourceTree = "<group>";
+		};
+		00E404A71F1B3BF400B23E43 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				00E404A81F1B3C2200B23E43 /* MainViewController.h */,
+				00E404A91F1B3C2200B23E43 /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		00E404AB1F1B417B00B23E43 /* WebApp */ = {
+			isa = PBXGroup;
+			children = (
+				00E404AC1F1B419000B23E43 /* WebAppAddressCenter.h */,
+				00E404AD1F1B419000B23E43 /* WebAppAddressCenter.m */,
+				00E404B21F1B441D00B23E43 /* WebAppViewController.h */,
+				00E404B31F1B441D00B23E43 /* WebAppViewController.m */,
+			);
+			path = WebApp;
+			sourceTree = "<group>";
+		};
+		00E404AF1F1B435A00B23E43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00E404B01F1B435A00B23E43 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +283,6 @@
 			files = (
 				00E404841F1B3BC800B23E43 /* LaunchScreen.storyboard in Resources */,
 				00E404811F1B3BC800B23E43 /* Assets.xcassets in Resources */,
-				00E4047F1F1B3BC800B23E43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E4047C1F1B3BC800B23E43 /* ViewController.m in Sources */,
 				00E404791F1B3BC800B23E43 /* AppDelegate.m in Sources */,
+				00E404B41F1B441D00B23E43 /* WebAppViewController.m in Sources */,
+				00E404AA1F1B3C2200B23E43 /* MainViewController.m in Sources */,
+				00E404AE1F1B419000B23E43 /* WebAppAddressCenter.m in Sources */,
 				00E404761F1B3BC800B23E43 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +347,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		00E4047D1F1B3BC800B23E43 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00E4047E1F1B3BC800B23E43 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00E404821F1B3BC800B23E43 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
