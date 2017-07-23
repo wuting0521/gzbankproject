@@ -6,11 +6,7 @@ target 'GZBankProject' do
   # use_frameworks!
 
   # Pods for GZBankProject
-  pod 'AFNetworking/Serialization', '2.5.0'
-  pod 'AFNetworking/Security', '2.5.0'
-  pod 'AFNetworking/Reachability', '2.5.0'
-  pod 'AFNetworking/NSURLConnection', '2.5.0'
-  pod 'AFNetworking/NSURLSession', '2.5.0'
+  pod 'AFNetworking'
 
   target 'GZBankProjectTests' do
     inherit! :search_paths

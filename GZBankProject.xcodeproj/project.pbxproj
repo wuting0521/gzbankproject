@@ -26,6 +26,7 @@
 		00F628481F230B2D00487AA5 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6283E1F230B2D00487AA5 /* NSMutableDictionary+Safe.m */; };
 		00F628491F230B2D00487AA5 /* NSString+SafeSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F628401F230B2D00487AA5 /* NSString+SafeSubstring.m */; };
 		00F6284A1F230B2D00487AA5 /* SafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F628421F230B2D00487AA5 /* SafeMutableDictionary.m */; };
+		00F6284E1F230BF400487AA5 /* AuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6284D1F230BF400487AA5 /* AuthManager.m */; };
 		2E247A8A07AABF3CCF392719 /* libPods-GZBankProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6633CC8CE74BD618C228FC /* libPods-GZBankProject.a */; };
 		EBB6979D7C8434D457C7DCB0 /* libPods-GZBankProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDE4D8D896D54E8F8E0D2F2 /* libPods-GZBankProjectTests.a */; };
 		F8D15069E2A5271659011EC8 /* libPods-GZBankProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D224C8882FCC8D80663B37 /* libPods-GZBankProjectUITests.a */; };
@@ -87,6 +88,8 @@
 		00F628401F230B2D00487AA5 /* NSString+SafeSubstring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SafeSubstring.m"; sourceTree = "<group>"; };
 		00F628411F230B2D00487AA5 /* SafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeMutableDictionary.h; sourceTree = "<group>"; };
 		00F628421F230B2D00487AA5 /* SafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeMutableDictionary.m; sourceTree = "<group>"; };
+		00F6284C1F230BF400487AA5 /* AuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthManager.h; sourceTree = "<group>"; };
+		00F6284D1F230BF400487AA5 /* AuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthManager.m; sourceTree = "<group>"; };
 		0DE44D32D8A754DE8AA9034A /* Pods-GZBankProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProjectUITests/Pods-GZBankProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A1FAEDCEB0CD773335E95BC /* Pods-GZBankProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProject/Pods-GZBankProject.debug.xcconfig"; sourceTree = "<group>"; };
 		333BC029982B2E07E1811058 /* Pods-GZBankProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZBankProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZBankProject/Pods-GZBankProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 		00E404731F1B3BC800B23E43 /* GZBankProject */ = {
 			isa = PBXGroup;
 			children = (
+				00F6284B1F230BE400487AA5 /* Auth */,
 				00F6282B1F230ADB00487AA5 /* Utility */,
 				00E404AB1F1B417B00B23E43 /* WebApp */,
 				00E404A71F1B3BF400B23E43 /* Main */,
@@ -269,6 +273,15 @@
 				00F628421F230B2D00487AA5 /* SafeMutableDictionary.m */,
 			);
 			path = ObjectSafe;
+			sourceTree = "<group>";
+		};
+		00F6284B1F230BE400487AA5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				00F6284C1F230BF400487AA5 /* AuthManager.h */,
+				00F6284D1F230BF400487AA5 /* AuthManager.m */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		76108595A5E3C6596340A895 /* Pods */ = {
@@ -565,6 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E404791F1B3BC800B23E43 /* AppDelegate.m in Sources */,
+				00F6284E1F230BF400487AA5 /* AuthManager.m in Sources */,
 				00F628451F230B2D00487AA5 /* NSArray+Safe.m in Sources */,
 				00F6284A1F230B2D00487AA5 /* SafeMutableDictionary.m in Sources */,
 				00F628491F230B2D00487AA5 /* NSString+SafeSubstring.m in Sources */,
