@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000A9D781F24DF6600739FCC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A9D771F24DF6600739FCC /* JavaScriptCore.framework */; };
+		000A9D7A1F24EBDC00739FCC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 000A9D791F24EBDC00739FCC /* index.html */; };
 		003A1ED61F24D8DB00F47F5E /* WebAppScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A1ED51F24D8DB00F47F5E /* WebAppScriptMessageHandler.m */; };
 		003A1ED91F24D9CD00F47F5E /* WebAppUserContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A1ED81F24D9CD00F47F5E /* WebAppUserContentController.m */; };
 		00E404761F1B3BC800B23E43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404751F1B3BC800B23E43 /* main.m */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000A9D771F24DF6600739FCC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		000A9D791F24EBDC00739FCC /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		003A1ED41F24D8DB00F47F5E /* WebAppScriptMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppScriptMessageHandler.h; sourceTree = "<group>"; };
 		003A1ED51F24D8DB00F47F5E /* WebAppScriptMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppScriptMessageHandler.m; sourceTree = "<group>"; };
 		003A1ED71F24D9CD00F47F5E /* WebAppUserContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppUserContentController.h; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000A9D781F24DF6600739FCC /* JavaScriptCore.framework in Frameworks */,
 				00E404B11F1B435A00B23E43 /* WebKit.framework in Frameworks */,
 				2E247A8A07AABF3CCF392719 /* libPods-GZBankProject.a in Frameworks */,
 			);
@@ -215,6 +220,7 @@
 		00E404AB1F1B417B00B23E43 /* WebApp */ = {
 			isa = PBXGroup;
 			children = (
+				000A9D791F24EBDC00739FCC /* index.html */,
 				00E404AC1F1B419000B23E43 /* WebAppAddressCenter.h */,
 				00E404AD1F1B419000B23E43 /* WebAppAddressCenter.m */,
 				00E404B21F1B441D00B23E43 /* WebAppViewController.h */,
@@ -230,6 +236,7 @@
 		00E404AF1F1B435A00B23E43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				000A9D771F24DF6600739FCC /* JavaScriptCore.framework */,
 				00E404B01F1B435A00B23E43 /* WebKit.framework */,
 				8D6633CC8CE74BD618C228FC /* libPods-GZBankProject.a */,
 				8FDE4D8D896D54E8F8E0D2F2 /* libPods-GZBankProjectTests.a */,
@@ -423,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000A9D7A1F24EBDC00739FCC /* index.html in Resources */,
 				00E404841F1B3BC800B23E43 /* LaunchScreen.storyboard in Resources */,
 				00E404811F1B3BC800B23E43 /* Assets.xcassets in Resources */,
 			);

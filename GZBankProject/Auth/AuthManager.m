@@ -62,20 +62,6 @@ static NSString * const kAuthHashUserDefaultskey = @"com.gzbank.webapp.auth.hash
     self.authHash = authHash;
 }
 
-//- (void)saveLoginInformationWithUid:(NSNumber *)uid authHash:(NSString *)authHash {
-//    if (!uid || !authHash) {
-//        return;
-//    }
-//    
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    [defaults setObject:uid forKey:kAuthUidUserDefaultsKey];
-//    [defaults setObject:authHash forKey:kAuthHashUserDefaultskey];
-//    [defaults synchronize];
-//    
-//    self.uid = uid;
-//    self.authHash = authHash;
-//}
-
 - (void)removeLoginInformation {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults removeObjectForKey:kAuthUidUserDefaultsKey];
@@ -86,11 +72,4 @@ static NSString * const kAuthHashUserDefaultskey = @"com.gzbank.webapp.auth.hash
     self.authHash = nil;
 }
 
-- (NSString *)webTokenForRequestString:(NSString *)requestString {
-    if (!requestString) {
-        return nil;
-    }
-    
-    return requestString.sha1;
-}
 @end

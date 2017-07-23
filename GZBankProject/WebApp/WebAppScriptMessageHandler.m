@@ -7,12 +7,40 @@
 //
 
 #import "WebAppScriptMessageHandler.h"
+#import "AuthManager.h"
+#import "NSString+Hashes.h"
+
+@interface WebAppScriptMessageHandler ()
+@property (weak, nonatomic) WKWebView *webView;
+@property (copy, nonatomic) void (^evaluateJavaScriptCompletionHandler)(id result, NSError *error);
+@end
 
 @implementation WebAppScriptMessageHandler
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.evaluateJavaScriptCompletionHandler = ^(id result, NSError *error) {
+            NSLog(@"[JS Evaluation]%@----%@", result, error);
+        };
+    }
+    
+    return self;
+}
+
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
-    if ([message.name isEqualToString:@"getToken"]) {
-        
+    self.webView = message.webView;
+    if ([message.name isEqualToString:@"saveToken"]) {
+        NSString *token = message.body;
+        [[AuthManager sharedInstance] saveAuthHash:token];
+    } else if ([message.name isEqualToString:@"getToken"]) {
+        NSString *token = [[AuthManager sharedInstance] authHash];
+        NSString *jsStr = [NSString stringWithFormat:@"getTokenResult('%@')", token];
+        [self.webView evaluateJavaScript:jsStr completionHandler:self.evaluateJavaScriptCompletionHandler];
+    } else if ([message.name isEqualToString:@"encryptData"]) {
+        NSString *data = message.body;
+        NSString *jsStr = [NSString stringWithFormat:@"encryptDataResult('%@')", data.sha1];
+        [self.webView evaluateJavaScript:jsStr completionHandler:self.evaluateJavaScriptCompletionHandler];
     }
 }
 

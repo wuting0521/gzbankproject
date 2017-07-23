@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
 @interface WebAppScriptMessageHandler : NSObject <WKScriptMessageHandler>
-
 @end

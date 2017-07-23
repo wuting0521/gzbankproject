@@ -8,6 +8,7 @@
 
 #import <WebKit/WebKit.h>
 
+@class WebAppScriptMessageHandler;
 @interface WebAppUserContentController : WKUserContentController
-
+@property (nonatomic, readonly) WebAppScriptMessageHandler *messageHandler;
 @end

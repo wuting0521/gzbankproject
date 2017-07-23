@@ -26,6 +26,8 @@
 }
 
 - (void)addMessageHandler {
+    [self addScriptMessageHandler:self.messageHandler name:@"saveToken"];
     [self addScriptMessageHandler:self.messageHandler name:@"getToken"];
+    [self addScriptMessageHandler:self.messageHandler name:@"encryptData"];
 }
 @end

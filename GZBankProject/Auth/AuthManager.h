@@ -17,6 +17,4 @@
 - (void)saveUid:(NSNumber *_Nullable)uid;
 - (void)saveAuthHash:(NSString *_Nullable)authHash;
 - (void)removeLoginInformation;
-
-- (NSString *_Nullable)webTokenForRequestString:(NSString *_Nonnull)requestString;
 @end

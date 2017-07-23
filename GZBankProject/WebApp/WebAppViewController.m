@@ -9,8 +9,10 @@
 #import "WebAppViewController.h"
 #import <WebKit/WebKit.h>
 #import "WebAppUserContentController.h"
+#import <JavaScriptCore/JavaScriptCore.h>
+#import "WebAppScriptMessageHandler.h"
 
-@interface WebAppViewController ()
+@interface WebAppViewController () <WKNavigationDelegate>
 @property (nonatomic) WKWebView *webView;
 @property (nonatomic) WebAppUserContentController *contentController;
 @property (copy, nonatomic) NSString *urlString;
@@ -34,6 +36,9 @@
 
 - (void)setupWebView {
     [self.view addSubview:self.webView];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+//    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+//    [self.webView loadHTMLString:html baseURL:[[NSBundle mainBundle] bundleURL]];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
 }
 
@@ -47,6 +52,11 @@
     if (!_webView) {
         WKWebViewConfiguration *conf = [[WKWebViewConfiguration alloc] init];
         conf.userContentController = self.contentController;
+        
+        WKPreferences *pref = [[WKPreferences alloc] init];
+        pref.javaScriptCanOpenWindowsAutomatically = YES;
+        pref.minimumFontSize = 40;
+        conf.preferences = pref;
         
         _webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:conf];
         _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
