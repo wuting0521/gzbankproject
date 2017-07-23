@@ -14,7 +14,8 @@
 @property (nonatomic, readonly, nullable) NSString *authHash;
 
 + (instancetype _Nonnull )sharedInstance;
-- (void)saveLoginInformationWithUid:(NSNumber *_Nonnull)uid authHash:(NSString *_Nonnull)authHash;
+- (void)saveUid:(NSNumber *_Nullable)uid;
+- (void)saveAuthHash:(NSString *_Nullable)authHash;
 - (void)removeLoginInformation;
 
 - (NSString *_Nullable)webTokenForRequestString:(NSString *_Nonnull)requestString;

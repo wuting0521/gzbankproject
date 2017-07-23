@@ -8,9 +8,11 @@
 
 #import "WebAppViewController.h"
 #import <WebKit/WebKit.h>
+#import "WebAppUserContentController.h"
 
 @interface WebAppViewController ()
 @property (nonatomic) WKWebView *webView;
+@property (nonatomic) WebAppUserContentController *contentController;
 @property (copy, nonatomic) NSString *urlString;
 @end
 
@@ -43,11 +45,22 @@
 #pragma mark -
 - (WKWebView *)webView {
     if (!_webView) {
-        _webView = [[WKWebView alloc] initWithFrame:self.view.bounds ];
+        WKWebViewConfiguration *conf = [[WKWebViewConfiguration alloc] init];
+        conf.userContentController = self.contentController;
+        
+        _webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:conf];
         _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     }
     
     return _webView;
+}
+
+- (WebAppUserContentController *)contentController {
+    if (!_contentController) {
+        _contentController = [[WebAppUserContentController alloc] init];
+    }
+    
+    return _contentController;
 }
 
 /*

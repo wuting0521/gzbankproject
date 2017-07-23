@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003A1ED61F24D8DB00F47F5E /* WebAppScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A1ED51F24D8DB00F47F5E /* WebAppScriptMessageHandler.m */; };
+		003A1ED91F24D9CD00F47F5E /* WebAppUserContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A1ED81F24D9CD00F47F5E /* WebAppUserContentController.m */; };
 		00E404761F1B3BC800B23E43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404751F1B3BC800B23E43 /* main.m */; };
 		00E404791F1B3BC800B23E43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E404781F1B3BC800B23E43 /* AppDelegate.m */; };
 		00E404811F1B3BC800B23E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E404801F1B3BC800B23E43 /* Assets.xcassets */; };
@@ -50,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003A1ED41F24D8DB00F47F5E /* WebAppScriptMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppScriptMessageHandler.h; sourceTree = "<group>"; };
+		003A1ED51F24D8DB00F47F5E /* WebAppScriptMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppScriptMessageHandler.m; sourceTree = "<group>"; };
+		003A1ED71F24D9CD00F47F5E /* WebAppUserContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppUserContentController.h; sourceTree = "<group>"; };
+		003A1ED81F24D9CD00F47F5E /* WebAppUserContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppUserContentController.m; sourceTree = "<group>"; };
 		00E404711F1B3BC800B23E43 /* GZBankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZBankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E404751F1B3BC800B23E43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00E404771F1B3BC800B23E43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -213,6 +219,10 @@
 				00E404AD1F1B419000B23E43 /* WebAppAddressCenter.m */,
 				00E404B21F1B441D00B23E43 /* WebAppViewController.h */,
 				00E404B31F1B441D00B23E43 /* WebAppViewController.m */,
+				003A1ED71F24D9CD00F47F5E /* WebAppUserContentController.h */,
+				003A1ED81F24D9CD00F47F5E /* WebAppUserContentController.m */,
+				003A1ED41F24D8DB00F47F5E /* WebAppScriptMessageHandler.h */,
+				003A1ED51F24D8DB00F47F5E /* WebAppScriptMessageHandler.m */,
 			);
 			path = WebApp;
 			sourceTree = "<group>";
@@ -578,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E404791F1B3BC800B23E43 /* AppDelegate.m in Sources */,
+				003A1ED61F24D8DB00F47F5E /* WebAppScriptMessageHandler.m in Sources */,
 				00F6284E1F230BF400487AA5 /* AuthManager.m in Sources */,
 				00F628451F230B2D00487AA5 /* NSArray+Safe.m in Sources */,
 				00F6284A1F230B2D00487AA5 /* SafeMutableDictionary.m in Sources */,
@@ -588,6 +599,7 @@
 				00F628441F230B2D00487AA5 /* NSString+Hashes.m in Sources */,
 				00F628461F230B2D00487AA5 /* NSDictionary+Safe.m in Sources */,
 				00F628471F230B2D00487AA5 /* NSMutableArray+Safe.m in Sources */,
+				003A1ED91F24D9CD00F47F5E /* WebAppUserContentController.m in Sources */,
 				00E404AE1F1B419000B23E43 /* WebAppAddressCenter.m in Sources */,
 				00F628431F230B2D00487AA5 /* HTTPClient.m in Sources */,
 				00E404761F1B3BC800B23E43 /* main.m in Sources */,
