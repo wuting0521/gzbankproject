@@ -8,7 +8,7 @@
 
 #import "WebAppAddressCenter.h"
 
-static NSString * kWebAppDevelopDomain = @"http://39.108.155.19:8080";
+static NSString * kWebAppDevelopDomain = @"http://119.23.41.237:8180";
 
 static NSString * kWebAppIndexURL = @"/front/index.html";
 static NSString * kWebAppPersonalCenterURL = @"/front/index.html#/person/index";
