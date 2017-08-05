@@ -29,7 +29,7 @@
     SplashView *splash = [[SplashView alloc] initWithFrame:self.view.bounds];
     splash.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:splash];
-    [splash loadSplashImageWithHideInterval:1.0];
+    [splash loadSplashImageWithHideInterval:3.0];
 }
 
 - (void)setupTabBar {

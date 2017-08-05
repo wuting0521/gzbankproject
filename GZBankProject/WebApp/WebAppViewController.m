@@ -31,11 +31,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setupWebView];
 }
 
 - (void)setupWebView {
     [self.view addSubview:self.webView];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.webView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:20]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.webView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.webView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.webView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]];
 //    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
 //    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 //    [self.webView loadHTMLString:html baseURL:[[NSBundle mainBundle] bundleURL]];
@@ -58,8 +63,8 @@
         pref.minimumFontSize = 40;
         conf.preferences = pref;
         
-        _webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:conf];
-        _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        _webView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:conf];
+        _webView.translatesAutoresizingMaskIntoConstraints = NO;
     }
     
     return _webView;
