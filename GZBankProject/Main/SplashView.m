@@ -21,7 +21,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
     
     return self;
@@ -29,7 +29,8 @@
 
 - (void)loadSplashImageWithHideInterval:(NSTimeInterval)interval {
     __weak __typeof(self) wself = self;
-    [[HTTPClient sharedInstance] GET:[WebAppAddressCenter appSplashImageURL]
+    NSString *url = [WebAppAddressCenter appSplashImageURL];
+    [[HTTPClient sharedInstance] GET:url
                           parameters:nil
                              success:^(NSURLSessionDataTask *task, id responseObject) {
                                  if ([responseObject isKindOfClass:[NSDictionary class]]) {
