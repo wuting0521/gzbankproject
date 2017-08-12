@@ -9,6 +9,7 @@
 #import "WebAppScriptMessageHandler.h"
 #import "AuthManager.h"
 #import "NSString+Hashes.h"
+#import "MainViewController.h"
 
 @interface WebAppScriptMessageHandler ()
 @property (weak, nonatomic) WKWebView *webView;
@@ -41,6 +42,9 @@
         NSString *data = message.body;
         NSString *jsStr = [NSString stringWithFormat:@"encryptDataResult('%@')", data.sha1];
         [self.webView evaluateJavaScript:jsStr completionHandler:self.evaluateJavaScriptCompletionHandler];
+    } else if ([message.name isEqualToString:@"goToPersonalCenter"]) {
+        MainViewController *vc = (MainViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+        vc.selectedIndex = 1;
     }
 }
 
