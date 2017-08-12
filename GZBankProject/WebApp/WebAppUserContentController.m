@@ -29,5 +29,6 @@
     [self addScriptMessageHandler:self.messageHandler name:@"saveToken"];
     [self addScriptMessageHandler:self.messageHandler name:@"getToken"];
     [self addScriptMessageHandler:self.messageHandler name:@"encryptData"];
+    [self addScriptMessageHandler:self.messageHandler name:@"goToTab"];
 }
 @end

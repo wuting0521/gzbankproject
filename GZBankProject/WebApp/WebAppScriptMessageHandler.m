@@ -42,9 +42,10 @@
         NSString *data = message.body;
         NSString *jsStr = [NSString stringWithFormat:@"encryptDataResult('%@')", data.sha1];
         [self.webView evaluateJavaScript:jsStr completionHandler:self.evaluateJavaScriptCompletionHandler];
-    } else if ([message.name isEqualToString:@"goToPersonalCenter"]) {
+    } else if ([message.name isEqualToString:@"goToTab"]) {
         MainViewController *vc = (MainViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-        vc.selectedIndex = 1;
+        NSString *tab = message.body;
+        vc.selectedIndex = [tab integerValue];
     }
 }
 
